@@ -73,6 +73,9 @@ app.use(function (error, req, res, next) {
 
 // set up for miltiple cluster
 
+const cpus  = os.cpus().length
+
+
 app.listen(4000, (e) => {
     !e && console.log(`server started at port ${4000} and process id ${process.pid}`);
 });
